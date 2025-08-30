@@ -2,31 +2,185 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maulana Ridhwan | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
   <header>
-    <h1>Hello, I'm <span class="highlight">Maulana Ridhwan</span></h1>
-    <p>AI Engineer & Data Scientist | Passionate about Machine Learning & Computer Vision</p>
-    <a href="projects.html" class="btn">View My Work</a>
+    <img src="img/RQZ.png" alt="Logo" class="logo">
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#certification">Certification</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#stacks">Stacks</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
   </header>
 
-  <!-- Footer -->
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="home-text">
+      <h1>Hello, I'm <span class="accent">Maulana Ridhwan</span></h1>
+      <p class="lead">AI Engineer & Data Scientist enthusiast. Passionate about building real-world AI solutions, from machine learning models to intelligent applications.</p>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+    <div class="home-image">
+      <img src="img/profile.png" alt="Profile Photo">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a fresh graduate with strong expertise in Python, TensorFlow, and PyTorch. I have developed machine learning projects in weather forecasting, recommendation systems, and NLP. My goal is to pursue a career in AI research and development, particularly in computer vision.</p>
+  </section>
+
+  <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+        <h3>AI Engineer Intern</h3>
+        <p><strong>PT. XYZ Indonesia</strong> | June 2023 - August 2023</p>
+        <ul>
+            <li>Developed and optimized machine learning models for image classification using TensorFlow.</li>
+            <li>Collaborated with cross-functional teams to deploy AI solutions in production environments.</li>
+            <li>Conducted data preprocessing and feature engineering to improve model accuracy.</li>
+        </ul>
+        </div>
+        <div class="experience-item">
+        <h3>Data Science Intern</h3>
+        <p><strong>ABC Tech Solutions</strong> | January 2023 - May 2023</p>
+        <ul>
+            <li>Analyzed large datasets to extract insights and support business decisions.</li>
+            <li>Built predictive models using Python and Scikit-learn to forecast sales trends.</li>
+            <li>Presented findings and recommendations to stakeholders through visualizations.</li>
+        </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="education-item">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p><strong>University of Indonesia</strong> | Graduated: 2023</p>
+        <ul>
+            <li>Relevant Coursework: Machine Learning, Data Structures, Algorithms, Database Systems.</li>
+            <li>Graduated with Honors, GPA: 3.75/4.00.</li>
+            <li>Capstone Project: Developed a recommendation system for e-commerce platforms using collaborative filtering techniques.</li>
+        </ul>
+        </div>
+    </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-list">
+      <div class="card portfolio-item" data-id="1" tabindex="0">
+        Weather Forecasting & Tourism Recommendation Web App
+        <div class="portfolio-desc" style="display:none;">
+          A web application that predicts weather and recommends tourism destinations based on weather forecasts and user preferences.
+        </div>
+      </div>
+      <div class="card portfolio-item" data-id="2" tabindex="0">
+        Music Recommendation System (Content-based Filtering)
+        <div class="portfolio-desc" style="display:none;">
+          A music recommendation system using content-based filtering to suggest songs based on user listening history and song features.
+        </div>
+      </div>
+      <div class="card portfolio-item" data-id="3" tabindex="0">
+        NLP Sentiment Analysis from Google Playstore Reviews
+        <div class="portfolio-desc" style="display:none;">
+          An NLP project that analyzes sentiment from Google Playstore reviews to gain insights into user satisfaction and app performance.
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Certification Section -->
+    <section id="certification" class="section">
+        <h2>Certification</h2>
+        <ul>
+        <li>Deep Learning Specialization - Coursera (2023)</li>
+        <li>Machine Learning with Python - edX (2022)</li>
+        <li>Data Science Professional Certificate - IBM (2022)</li>
+        </ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <h2>Achievements</h2>
+        <ul>
+        <li>1st Place - National AI Hackathon 2023</li>
+        <li>Dean's List - University of Indonesia (2020-2023)</li>
+        <li>Best Capstone Project - University of Indonesia (2023)</li>
+        </ul>
+    </section>
+
+    <!-- Stacks Section -->
+    <section id="stacks" class="section">
+        <h2>Tech Stacks</h2>
+        <ul>
+        <li>Programming Languages: Python, R, SQL</li>
+        <li>Machine Learning Frameworks: TensorFlow, PyTorch, Scikit-learn</li>
+        <li>Data Visualization: Matplotlib, Seaborn, Tableau</li>
+        <li>Database Management: MySQL, MongoDB</li>
+        <li>Version Control: Git, GitHub</li>
+        </ul>
+    </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:maulanaridhwanriziq@gmail.com" class="link" title="Gmail">
+        <i class="fa-solid fa-envelope"></i> maulanaridhwanriziq@gmail.com
+      </a>
+    </p>
+    <p>
+      <a href="https://github.com/maulanaridhwan" target="_blank" class="link" title="GitHub">
+        <i class="fab fa-github"></i> github.com/maulanaridhwan
+      </a>
+    </p>
+    <p>
+      <a href="https://www.linkedin.com/in/maulanarr/" target="_blank" class="link" title="LinkedIn">
+        <i class="fab fa-linkedin"></i> linkedin.com/in/maulanaridhwan
+      </a>
+    </p>
+  </section>
+
   <footer>
-    <p>© 2025 Maulana Ridhwan | <a href="mailto:youremail@gmail.com">Email</a> | <a href="https://github.com/username">GitHub</a> | <a href="https://linkedin.com/in/username">LinkedIn</a></p>
+    <p>&copy; 2025 Maulana Ridhwan. All Rights Reserved.</p>
   </footer>
+
+  <script>
+document.querySelectorAll('.portfolio-item').forEach(item => {
+  item.addEventListener('click', function() {
+    // Tutup semua deskripsi lain
+    document.querySelectorAll('.portfolio-desc').forEach(desc => {
+      if (desc !== this.querySelector('.portfolio-desc')) {
+        desc.style.display = 'none';
+      }
+    });
+    // Toggle deskripsi yang diklik
+    const desc = this.querySelector('.portfolio-desc');
+    desc.style.display = (desc.style.display === 'block') ? 'none' : 'block';
+  });
+});
+</script>
 </body>
 </html>
