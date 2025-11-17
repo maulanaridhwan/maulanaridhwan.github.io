@@ -1,0 +1,112 @@
+/* minimal custom vars */
+:root{
+  --mint-50: #ecfdf5;
+  --mint-100: #d1fae5;
+  --mint-200: #a7f3d0;
+  --accent: #16a34a;
+}
+
+/* small global tweaks */
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+a{color:inherit}
+img{display:block;max-width:100%}
+
+/* nice top scroll offset for sections (since navbar fixed) */
+:target::before{
+  content: "";
+  display: block;
+  height: 72px; /* navbar height */
+  margin-top: -72px;
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.25s ease-out forwards;
+  }
+  .animate-slideIn {
+    animation: slideIn 0.25s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
+  @keyframes slideIn {
+    from { transform: translateX(100%) }
+    to { transform: translateX(0) }
+  }
+
+  /* Parallax */
+  .parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Floating animation */
+@keyframes float-slow {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+.float-slow {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+/* 3D hover card */
+.card-3d {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+.card-3d:hover {
+  transform: rotateX(8deg) rotateY(-8deg) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Multi-layer parallax */
+.parallax-layer-1 {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.parallax-layer-2 {
+  transform: translateZ(-2px) scale(3);
+}
+.parallax-layer-3 {
+  transform: translateZ(-4px) scale(5);
+}
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #22d3ee, #34d399);
+  width: 0%;
+  z-index: 999;
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #1e293b 0%,
+    #334155 50%,
+    #1e293b 100%
+  );
+  background-size: 200%;
+  animation: shimmerMove 1.4s infinite;
+}
+
+@keyframes shimmerMove {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+
+/* Smooth theme transition */
+html, body, * {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
