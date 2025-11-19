@@ -29,7 +29,7 @@ export default function Hero() {
 
     <div className="flex-1">
       <img
-        src="./src/assets/profile-2.png"
+        src="/img/profile-2.png"
         alt="hero"
         className="w-64 h-64 float-slow rounded-xl shadow-xl"
       />

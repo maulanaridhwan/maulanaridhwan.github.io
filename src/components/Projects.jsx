@@ -15,7 +15,7 @@ export default function Projects() {
         <div className="flex flex-col lg:flex-row gap-6 items-center">
           <div className="w-full lg:w-80">
             <a href="https://github.com/maulanaridhwan/carbonswap-ai" target="_blank" rel="noreferrer">
-              <img src="./src/assets/landingpage.png" alt="project1" className="rounded" />
+              <img src="/img/landingpage.png" alt="project1" className="rounded" />
             </a>
           </div>
           <div className="flex-1">
@@ -35,7 +35,7 @@ export default function Projects() {
         <div className="flex flex-col lg:flex-row-reverse gap-6 items-center">
           <div className="w-full lg:w-80">
             <a href="https://sandtara-trip.vercel.app/" target="_blank" rel="noreferrer">
-              <img src="./src/assets/sandtara.png" alt="project2" className="rounded" />
+              <img src="/img/sandtara.png" alt="project2" className="rounded" />
             </a>
           </div>
           <div className="flex-1">
