@@ -22,8 +22,8 @@ about integrating AI with engineering to deliver scalable, technology-driven sol
 
         <div className="order-1 lg:order-2 flex justify-center">
           <img
-            src="https://media.geeksforgeeks.org/img-practice/Asset1-1641910145.svg"
-            alt="about illustration"
+            src="#"
+            alt="about"
             className="w-72 h-72 object-contain"
           />
         </div>

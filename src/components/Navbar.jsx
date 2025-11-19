@@ -21,7 +21,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#hero" className="flex items-center">
             <img 
-            src="/img/RQZ.png"
+            src="./img/RQZ.png"
             alt="Logo"
             className="h-20 w-auto"
             />
