@@ -1,7 +1,8 @@
 import useScrollReveal from "../hooks/useScrollReveal";
+import ProjectSlider from "./ProjectSlider";
 
 export default function Projects() {
-    const ref = useScrollReveal();
+  const ref = useScrollReveal();
   return (
     <section
       ref={ref}
@@ -14,9 +15,7 @@ export default function Projects() {
       <div className="bg-emerald-100 rounded-lg p-6 mb-6 shadow hover:scale-[1.02] transition transform">
         <div className="flex flex-col lg:flex-row gap-6 items-center">
           <div className="w-full lg:w-80">
-            <a href="https://github.com/maulanaridhwan/carbonswap-ai" target="_blank" rel="noreferrer">
-              <img src="./img/landingpage.png" alt="project1" className="rounded" />
-            </a>
+              <ProjectSlider images={["/img/SwappyAI-1.png", "/img/SwappyAI-2.png"]} />
           </div>
           <div className="flex-1">
             <h3 className="text-2xl font-bold text-emerald-700">CarbonSwap's Agentic Chatbot</h3>
@@ -34,9 +33,7 @@ export default function Projects() {
       <div className="bg-emerald-100 rounded-lg p-6 mb-6 shadow hover:scale-[1.02] transition transform">
         <div className="flex flex-col lg:flex-row-reverse gap-6 items-center">
           <div className="w-full lg:w-80">
-            <a href="https://sandtara-trip.vercel.app/" target="_blank" rel="noreferrer">
-              <img src="./img/sandtara.png" alt="project2" className="rounded" />
-            </a>
+              <ProjectSlider images={["/img/sandtara-1.png", "/img/sandtara-2.png"]} />
           </div>
           <div className="flex-1">
             <h3 className="text-2xl font-bold text-emerald-700">Sandtara Trip's Weather Forecasting</h3>
