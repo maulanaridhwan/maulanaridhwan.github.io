@@ -274,7 +274,7 @@ export default function About() {
             </p>
             
             <a
-              href="/public/img/resume.pdf"
+              href="/src/assets/resume.pdf"
               download
               style={{
                 display: "inline-flex",
