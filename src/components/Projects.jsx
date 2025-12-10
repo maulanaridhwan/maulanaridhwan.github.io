@@ -12,7 +12,7 @@ export default function Projects() {
       <h2 className="text-center text-4xl font-extrabold text-emerald-600 mb-8">Projects</h2>
 
       {/* Project 1 */}
-      <div className="bg-emerald-100 rounded-lg p-6 mb-6 shadow hover:scale-[1.02] transition transform">
+      <div className="bg-emerald-100 rounded-lg p-6 mb-6 hover:scale-[1.02] transition transform">
         <div className="flex flex-col lg:flex-row gap-6 items-center">
           <div className="w-full lg:w-80">
               <ProjectSlider images={["/img/SwappyAI-1.png", "/img/SwappyAI-2.png"]} />
@@ -30,7 +30,7 @@ export default function Projects() {
       </div>
 
       {/* Project 2 */}
-      <div className="bg-emerald-100 rounded-lg p-6 mb-6 shadow hover:scale-[1.02] transition transform">
+      <div className="bg-emerald-100 rounded-lg p-6 mb-6 hover:scale-[1.02] transition transform">
         <div className="flex flex-col lg:flex-row-reverse gap-6 items-center">
           <div className="w-full lg:w-80">
               <ProjectSlider images={["/img/sandtara-1.png", "/img/sandtara-2.png"]} />

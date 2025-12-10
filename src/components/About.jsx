@@ -274,7 +274,7 @@ export default function About() {
             </p>
             
             <a
-              href="/src/assets/resume.pdf"
+              href="https://drive.google.com/file/d/17IwIuMmN_6giw21iPigo6kxgGKUD7fRY/view?usp=sharing"
               download
               style={{
                 display: "inline-flex",
